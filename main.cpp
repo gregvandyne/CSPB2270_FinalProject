@@ -122,6 +122,10 @@ int main() {
             for (const auto& s : surveys) titles.push_back(s.getTitle());
             int idx = UIHelper::selectFromList("Select a survey to take:", titles);
             surveys[idx].takeSurvey();
+        
+            // 🛠️ FIX: Flush buffer after survey completion
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');        
         } else if (command == "survey_stats") {
             if (surveys.empty()) {
                 UIHelper::printWarning("No surveys available.");

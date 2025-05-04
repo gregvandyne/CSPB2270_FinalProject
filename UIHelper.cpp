@@ -28,7 +28,7 @@ void UIHelper::printBanner(const std::string& message) {
 }
 
 void UIHelper::printMenu(const std::vector<std::string>& items) {
-    std::cout << BOLD << BLUE << "\n🚀 Main Menu 🚀" << RESET << "\n";
+    std::cout << BOLD << BLUE << "\n🚀 Supercharged Main Menu 🚀" << RESET << "\n";
     for (size_t i = 0; i < items.size(); ++i) {
         std::cout << BOLD << YELLOW << "  [" << i + 1 << "] " << RESET << GREEN << items[i] << RESET << "\n";
         std::this_thread::sleep_for(std::chrono::milliseconds(40));
@@ -74,7 +74,7 @@ int UIHelper::selectFromList(const std::string& promptMsg, const std::vector<std
     printList(promptMsg, options);
     int selection;
     while (true) {
-        std::cout << CYAN << "👉 Your Choice: " << RESET;
+        std::cout << CYAN << "👉 Choose wisely: " << RESET;
         if (std::cin >> selection && selection >= 0 && selection < static_cast<int>(options.size())) {
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             return selection;
