@@ -266,6 +266,33 @@ FenwickTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/FenwickTree.cpp.s
 .PHONY : FenwickTree.cpp.s
 
+PollCollection.o: PollCollection.cpp.o
+.PHONY : PollCollection.o
+
+# target to build an object file
+PollCollection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voting_app.dir/build.make CMakeFiles/voting_app.dir/PollCollection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/PollCollection.cpp.o
+.PHONY : PollCollection.cpp.o
+
+PollCollection.i: PollCollection.cpp.i
+.PHONY : PollCollection.i
+
+# target to preprocess a source file
+PollCollection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voting_app.dir/build.make CMakeFiles/voting_app.dir/PollCollection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/PollCollection.cpp.i
+.PHONY : PollCollection.cpp.i
+
+PollCollection.s: PollCollection.cpp.s
+.PHONY : PollCollection.s
+
+# target to generate assembly for a file
+PollCollection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voting_app.dir/build.make CMakeFiles/voting_app.dir/PollCollection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/PollCollection.cpp.s
+.PHONY : PollCollection.cpp.s
+
 PollManager.o: PollManager.cpp.o
 .PHONY : PollManager.o
 
@@ -341,6 +368,30 @@ tests/test_fenwick.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_fenwick.cpp.s
 .PHONY : tests/test_fenwick.cpp.s
 
+tests/test_poll_collection.o: tests/test_poll_collection.cpp.o
+.PHONY : tests/test_poll_collection.o
+
+# target to build an object file
+tests/test_poll_collection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_poll_collection.cpp.o
+.PHONY : tests/test_poll_collection.cpp.o
+
+tests/test_poll_collection.i: tests/test_poll_collection.cpp.i
+.PHONY : tests/test_poll_collection.i
+
+# target to preprocess a source file
+tests/test_poll_collection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_poll_collection.cpp.i
+.PHONY : tests/test_poll_collection.cpp.i
+
+tests/test_poll_collection.s: tests/test_poll_collection.cpp.s
+.PHONY : tests/test_poll_collection.s
+
+# target to generate assembly for a file
+tests/test_poll_collection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_poll_collection.cpp.s
+.PHONY : tests/test_poll_collection.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -362,6 +413,9 @@ help:
 	@echo "... FenwickTree.o"
 	@echo "... FenwickTree.i"
 	@echo "... FenwickTree.s"
+	@echo "... PollCollection.o"
+	@echo "... PollCollection.i"
+	@echo "... PollCollection.s"
 	@echo "... PollManager.o"
 	@echo "... PollManager.i"
 	@echo "... PollManager.s"
@@ -371,6 +425,9 @@ help:
 	@echo "... tests/test_fenwick.o"
 	@echo "... tests/test_fenwick.i"
 	@echo "... tests/test_fenwick.s"
+	@echo "... tests/test_poll_collection.o"
+	@echo "... tests/test_poll_collection.i"
+	@echo "... tests/test_poll_collection.s"
 .PHONY : help
 
 

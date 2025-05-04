@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/voting_app.dir/FenwickTree.cpp.o"
   "CMakeFiles/voting_app.dir/FenwickTree.cpp.o.d"
+  "CMakeFiles/voting_app.dir/PollCollection.cpp.o"
+  "CMakeFiles/voting_app.dir/PollCollection.cpp.o.d"
   "CMakeFiles/voting_app.dir/PollManager.cpp.o"
   "CMakeFiles/voting_app.dir/PollManager.cpp.o.d"
   "CMakeFiles/voting_app.dir/main.cpp.o"

@@ -12,13 +12,16 @@ add_executable(voting_app
     main.cpp
     FenwickTree.cpp
     PollManager.cpp
+    PollCollection.cpp
 )
 
 # Test App
 add_executable(run_tests
     tests/test_fenwick.cpp
+    tests/test_poll_collection.cpp
     FenwickTree.cpp
     PollManager.cpp
+    PollCollection.cpp
 )
 
 target_link_libraries(run_tests gtest gtest_main)

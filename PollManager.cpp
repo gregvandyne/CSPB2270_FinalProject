@@ -2,6 +2,29 @@
 #include "PollManager.h"
 #include <iostream>
 #include <iomanip>
+#include <fstream>
+
+void PollManager::exportToCSV(const std::string& filename) const {
+    std::ofstream out(filename);
+    if (!out) {
+        std::cerr << "❌ Failed to open file for writing: " << filename << "\n";
+        return;
+    }
+
+    out << "Option,Vote Count,Percentage\n";
+    int total = votes.total();
+    for (size_t i = 0; i < options.size(); ++i) {
+        int count = votes.rangeQuery(i + 1, i + 1);
+        double percentage = total > 0 ? (count * 100.0 / total) : 0.0;
+        out << "\"" << options[i] << "\"," << count << "," << percentage << "\n";
+    }
+
+    out << "Total," << total << ",100.0\n";
+    out.close();
+
+    std::cout << "📁 Poll results exported to " << filename << "\n";
+}
+
 
 int PollManager::totalVotes() const {
     return votes.total();
@@ -10,17 +33,26 @@ int PollManager::totalVotes() const {
 PollManager::PollManager(const std::vector<std::string>& opts)
     : options(opts), votes(opts.size()) {}
 
-void PollManager::castVote(int optionIndex) {
-    if (optionIndex >= 0 && optionIndex < options.size()) {
-        votes.update(optionIndex + 1, 1);
+void PollManager::castVote(int index) {
+    if (index < 0 || index >= options.size()) {
+        std::cout << "❌ Invalid vote option.\n";
+        return;
     }
+    votes.update(index + 1, 1);  // Use 'votes' instead of 'tree'
+    lastVoteIndex = index;
+}
+    
+void PollManager::undoVote() {
+    if (lastVoteIndex == -1) {
+        std::cout << "⚠️ No vote to undo.\n";
+        return;
+    }
+    votes.update(lastVoteIndex + 1, -1);  // Use 'votes' here too
+    std::cout << "↩️ Undid last vote for option " << lastVoteIndex
+                << ": " << options[lastVoteIndex] << "\n";
+    lastVoteIndex = -1;
 }
 
-void PollManager::undoVote(int optionIndex) {
-    if (optionIndex >= 0 && optionIndex < options.size()) {
-        votes.update(optionIndex + 1, -1);
-    }
-}
 
 void PollManager::displayStats() const {
     int total = votes.total();
@@ -34,3 +66,15 @@ void PollManager::displayStats() const {
     }
     std::cout << "Total votes: " << total << "\n";
 }
+
+int PollManager::optionCount() const {
+    return options.size();
+}
+
+std::string PollManager::getOptionLabel(int index) const {
+    if (index >= 0 && index < options.size()) {
+        return options[index];
+    }
+    return "[Invalid Option]";
+}
+

@@ -37,9 +37,9 @@ TEST(PollManagerTest, VoteCounting) {
 
 TEST(PollManagerTest, UndoVote) {
     PollManager poll({"A", "B"});
-    poll.castVote(1);
-    poll.castVote(1);
-    poll.undoVote(1);
+    poll.castVote(1);  // lastVoteIndex = 1
+    poll.castVote(1);  // lastVoteIndex = 1
+    poll.undoVote();   // undo the last vote for index 1
 
-    EXPECT_EQ(poll.totalVotes(), 1);
+    EXPECT_EQ(poll.totalVotes(), 1);  // Should remove one vote
 }

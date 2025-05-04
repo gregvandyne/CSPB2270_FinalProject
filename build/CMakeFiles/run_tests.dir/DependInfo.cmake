@@ -9,8 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/gregvandyne/CSPB2270_FinalProject/FenwickTree.cpp" "CMakeFiles/run_tests.dir/FenwickTree.cpp.o" "gcc" "CMakeFiles/run_tests.dir/FenwickTree.cpp.o.d"
+  "/Users/gregvandyne/CSPB2270_FinalProject/PollCollection.cpp" "CMakeFiles/run_tests.dir/PollCollection.cpp.o" "gcc" "CMakeFiles/run_tests.dir/PollCollection.cpp.o.d"
   "/Users/gregvandyne/CSPB2270_FinalProject/PollManager.cpp" "CMakeFiles/run_tests.dir/PollManager.cpp.o" "gcc" "CMakeFiles/run_tests.dir/PollManager.cpp.o.d"
   "/Users/gregvandyne/CSPB2270_FinalProject/tests/test_fenwick.cpp" "CMakeFiles/run_tests.dir/tests/test_fenwick.cpp.o" "gcc" "CMakeFiles/run_tests.dir/tests/test_fenwick.cpp.o.d"
+  "/Users/gregvandyne/CSPB2270_FinalProject/tests/test_poll_collection.cpp" "CMakeFiles/run_tests.dir/tests/test_poll_collection.cpp.o" "gcc" "CMakeFiles/run_tests.dir/tests/test_poll_collection.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
