@@ -142,13 +142,43 @@ CMakeFiles/run_tests.dir/PollCollection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/PollCollection.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gregvandyne/CSPB2270_FinalProject/PollCollection.cpp -o CMakeFiles/run_tests.dir/PollCollection.cpp.s
 
+CMakeFiles/run_tests.dir/Survey.cpp.o: CMakeFiles/run_tests.dir/flags.make
+CMakeFiles/run_tests.dir/Survey.cpp.o: /Users/gregvandyne/CSPB2270_FinalProject/Survey.cpp
+CMakeFiles/run_tests.dir/Survey.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/gregvandyne/CSPB2270_FinalProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/run_tests.dir/Survey.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/Survey.cpp.o -MF CMakeFiles/run_tests.dir/Survey.cpp.o.d -o CMakeFiles/run_tests.dir/Survey.cpp.o -c /Users/gregvandyne/CSPB2270_FinalProject/Survey.cpp
+
+CMakeFiles/run_tests.dir/Survey.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/Survey.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gregvandyne/CSPB2270_FinalProject/Survey.cpp > CMakeFiles/run_tests.dir/Survey.cpp.i
+
+CMakeFiles/run_tests.dir/Survey.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/Survey.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gregvandyne/CSPB2270_FinalProject/Survey.cpp -o CMakeFiles/run_tests.dir/Survey.cpp.s
+
+CMakeFiles/run_tests.dir/UIHelper.cpp.o: CMakeFiles/run_tests.dir/flags.make
+CMakeFiles/run_tests.dir/UIHelper.cpp.o: /Users/gregvandyne/CSPB2270_FinalProject/UIHelper.cpp
+CMakeFiles/run_tests.dir/UIHelper.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/gregvandyne/CSPB2270_FinalProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/run_tests.dir/UIHelper.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/UIHelper.cpp.o -MF CMakeFiles/run_tests.dir/UIHelper.cpp.o.d -o CMakeFiles/run_tests.dir/UIHelper.cpp.o -c /Users/gregvandyne/CSPB2270_FinalProject/UIHelper.cpp
+
+CMakeFiles/run_tests.dir/UIHelper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/UIHelper.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gregvandyne/CSPB2270_FinalProject/UIHelper.cpp > CMakeFiles/run_tests.dir/UIHelper.cpp.i
+
+CMakeFiles/run_tests.dir/UIHelper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/UIHelper.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gregvandyne/CSPB2270_FinalProject/UIHelper.cpp -o CMakeFiles/run_tests.dir/UIHelper.cpp.s
+
 # Object files for target run_tests
 run_tests_OBJECTS = \
 "CMakeFiles/run_tests.dir/tests/test_fenwick.cpp.o" \
 "CMakeFiles/run_tests.dir/tests/test_poll_collection.cpp.o" \
 "CMakeFiles/run_tests.dir/FenwickTree.cpp.o" \
 "CMakeFiles/run_tests.dir/PollManager.cpp.o" \
-"CMakeFiles/run_tests.dir/PollCollection.cpp.o"
+"CMakeFiles/run_tests.dir/PollCollection.cpp.o" \
+"CMakeFiles/run_tests.dir/Survey.cpp.o" \
+"CMakeFiles/run_tests.dir/UIHelper.cpp.o"
 
 # External object files for target run_tests
 run_tests_EXTERNAL_OBJECTS =
@@ -158,12 +188,14 @@ run_tests: CMakeFiles/run_tests.dir/tests/test_poll_collection.cpp.o
 run_tests: CMakeFiles/run_tests.dir/FenwickTree.cpp.o
 run_tests: CMakeFiles/run_tests.dir/PollManager.cpp.o
 run_tests: CMakeFiles/run_tests.dir/PollCollection.cpp.o
+run_tests: CMakeFiles/run_tests.dir/Survey.cpp.o
+run_tests: CMakeFiles/run_tests.dir/UIHelper.cpp.o
 run_tests: CMakeFiles/run_tests.dir/build.make
 run_tests: lib/libgtest.a
 run_tests: lib/libgtest_main.a
 run_tests: lib/libgtest.a
 run_tests: CMakeFiles/run_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/gregvandyne/CSPB2270_FinalProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/gregvandyne/CSPB2270_FinalProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable run_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

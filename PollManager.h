@@ -20,4 +20,5 @@ public:
     int lastVoteIndex = -1; // to track last vote
     void undoVote();
     void exportToCSV(const std::string& filename) const;
+    int getVoteCount(int optionIndex) const;
 };

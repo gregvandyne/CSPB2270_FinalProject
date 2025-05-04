@@ -11,6 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/gregvandyne/CSPB2270_FinalProject/FenwickTree.cpp" "CMakeFiles/voting_app.dir/FenwickTree.cpp.o" "gcc" "CMakeFiles/voting_app.dir/FenwickTree.cpp.o.d"
   "/Users/gregvandyne/CSPB2270_FinalProject/PollCollection.cpp" "CMakeFiles/voting_app.dir/PollCollection.cpp.o" "gcc" "CMakeFiles/voting_app.dir/PollCollection.cpp.o.d"
   "/Users/gregvandyne/CSPB2270_FinalProject/PollManager.cpp" "CMakeFiles/voting_app.dir/PollManager.cpp.o" "gcc" "CMakeFiles/voting_app.dir/PollManager.cpp.o.d"
+  "/Users/gregvandyne/CSPB2270_FinalProject/Survey.cpp" "CMakeFiles/voting_app.dir/Survey.cpp.o" "gcc" "CMakeFiles/voting_app.dir/Survey.cpp.o.d"
+  "/Users/gregvandyne/CSPB2270_FinalProject/UIHelper.cpp" "CMakeFiles/voting_app.dir/UIHelper.cpp.o" "gcc" "CMakeFiles/voting_app.dir/UIHelper.cpp.o.d"
   "/Users/gregvandyne/CSPB2270_FinalProject/main.cpp" "CMakeFiles/voting_app.dir/main.cpp.o" "gcc" "CMakeFiles/voting_app.dir/main.cpp.o.d"
   )
 

@@ -78,3 +78,7 @@ std::string PollManager::getOptionLabel(int index) const {
     return "[Invalid Option]";
 }
 
+int PollManager::getVoteCount(int optionIndex) const {
+    if (optionIndex < 0 || optionIndex >= optionCount()) return 0;
+    return votes.rangeQuery(optionIndex + 1, optionIndex + 1);
+}

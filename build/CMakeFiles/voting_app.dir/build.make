@@ -128,12 +128,42 @@ CMakeFiles/voting_app.dir/PollCollection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/voting_app.dir/PollCollection.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gregvandyne/CSPB2270_FinalProject/PollCollection.cpp -o CMakeFiles/voting_app.dir/PollCollection.cpp.s
 
+CMakeFiles/voting_app.dir/Survey.cpp.o: CMakeFiles/voting_app.dir/flags.make
+CMakeFiles/voting_app.dir/Survey.cpp.o: /Users/gregvandyne/CSPB2270_FinalProject/Survey.cpp
+CMakeFiles/voting_app.dir/Survey.cpp.o: CMakeFiles/voting_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/gregvandyne/CSPB2270_FinalProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/voting_app.dir/Survey.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/voting_app.dir/Survey.cpp.o -MF CMakeFiles/voting_app.dir/Survey.cpp.o.d -o CMakeFiles/voting_app.dir/Survey.cpp.o -c /Users/gregvandyne/CSPB2270_FinalProject/Survey.cpp
+
+CMakeFiles/voting_app.dir/Survey.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/voting_app.dir/Survey.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gregvandyne/CSPB2270_FinalProject/Survey.cpp > CMakeFiles/voting_app.dir/Survey.cpp.i
+
+CMakeFiles/voting_app.dir/Survey.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/voting_app.dir/Survey.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gregvandyne/CSPB2270_FinalProject/Survey.cpp -o CMakeFiles/voting_app.dir/Survey.cpp.s
+
+CMakeFiles/voting_app.dir/UIHelper.cpp.o: CMakeFiles/voting_app.dir/flags.make
+CMakeFiles/voting_app.dir/UIHelper.cpp.o: /Users/gregvandyne/CSPB2270_FinalProject/UIHelper.cpp
+CMakeFiles/voting_app.dir/UIHelper.cpp.o: CMakeFiles/voting_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/gregvandyne/CSPB2270_FinalProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/voting_app.dir/UIHelper.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/voting_app.dir/UIHelper.cpp.o -MF CMakeFiles/voting_app.dir/UIHelper.cpp.o.d -o CMakeFiles/voting_app.dir/UIHelper.cpp.o -c /Users/gregvandyne/CSPB2270_FinalProject/UIHelper.cpp
+
+CMakeFiles/voting_app.dir/UIHelper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/voting_app.dir/UIHelper.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gregvandyne/CSPB2270_FinalProject/UIHelper.cpp > CMakeFiles/voting_app.dir/UIHelper.cpp.i
+
+CMakeFiles/voting_app.dir/UIHelper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/voting_app.dir/UIHelper.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gregvandyne/CSPB2270_FinalProject/UIHelper.cpp -o CMakeFiles/voting_app.dir/UIHelper.cpp.s
+
 # Object files for target voting_app
 voting_app_OBJECTS = \
 "CMakeFiles/voting_app.dir/main.cpp.o" \
 "CMakeFiles/voting_app.dir/FenwickTree.cpp.o" \
 "CMakeFiles/voting_app.dir/PollManager.cpp.o" \
-"CMakeFiles/voting_app.dir/PollCollection.cpp.o"
+"CMakeFiles/voting_app.dir/PollCollection.cpp.o" \
+"CMakeFiles/voting_app.dir/Survey.cpp.o" \
+"CMakeFiles/voting_app.dir/UIHelper.cpp.o"
 
 # External object files for target voting_app
 voting_app_EXTERNAL_OBJECTS =
@@ -142,9 +172,11 @@ voting_app: CMakeFiles/voting_app.dir/main.cpp.o
 voting_app: CMakeFiles/voting_app.dir/FenwickTree.cpp.o
 voting_app: CMakeFiles/voting_app.dir/PollManager.cpp.o
 voting_app: CMakeFiles/voting_app.dir/PollCollection.cpp.o
+voting_app: CMakeFiles/voting_app.dir/Survey.cpp.o
+voting_app: CMakeFiles/voting_app.dir/UIHelper.cpp.o
 voting_app: CMakeFiles/voting_app.dir/build.make
 voting_app: CMakeFiles/voting_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/gregvandyne/CSPB2270_FinalProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable voting_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/gregvandyne/CSPB2270_FinalProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable voting_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/voting_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

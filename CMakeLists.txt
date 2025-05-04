@@ -13,6 +13,8 @@ add_executable(voting_app
     FenwickTree.cpp
     PollManager.cpp
     PollCollection.cpp
+    Survey.cpp
+    UIHelper.cpp
 )
 
 # Test App
@@ -22,6 +24,8 @@ add_executable(run_tests
     FenwickTree.cpp
     PollManager.cpp
     PollCollection.cpp
+    Survey.cpp
+    UIHelper.cpp
 )
 
 target_link_libraries(run_tests gtest gtest_main)

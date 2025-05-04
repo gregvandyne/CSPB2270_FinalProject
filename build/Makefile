@@ -320,6 +320,60 @@ PollManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/PollManager.cpp.s
 .PHONY : PollManager.cpp.s
 
+Survey.o: Survey.cpp.o
+.PHONY : Survey.o
+
+# target to build an object file
+Survey.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voting_app.dir/build.make CMakeFiles/voting_app.dir/Survey.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/Survey.cpp.o
+.PHONY : Survey.cpp.o
+
+Survey.i: Survey.cpp.i
+.PHONY : Survey.i
+
+# target to preprocess a source file
+Survey.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voting_app.dir/build.make CMakeFiles/voting_app.dir/Survey.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/Survey.cpp.i
+.PHONY : Survey.cpp.i
+
+Survey.s: Survey.cpp.s
+.PHONY : Survey.s
+
+# target to generate assembly for a file
+Survey.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voting_app.dir/build.make CMakeFiles/voting_app.dir/Survey.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/Survey.cpp.s
+.PHONY : Survey.cpp.s
+
+UIHelper.o: UIHelper.cpp.o
+.PHONY : UIHelper.o
+
+# target to build an object file
+UIHelper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voting_app.dir/build.make CMakeFiles/voting_app.dir/UIHelper.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/UIHelper.cpp.o
+.PHONY : UIHelper.cpp.o
+
+UIHelper.i: UIHelper.cpp.i
+.PHONY : UIHelper.i
+
+# target to preprocess a source file
+UIHelper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voting_app.dir/build.make CMakeFiles/voting_app.dir/UIHelper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/UIHelper.cpp.i
+.PHONY : UIHelper.cpp.i
+
+UIHelper.s: UIHelper.cpp.s
+.PHONY : UIHelper.s
+
+# target to generate assembly for a file
+UIHelper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voting_app.dir/build.make CMakeFiles/voting_app.dir/UIHelper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/UIHelper.cpp.s
+.PHONY : UIHelper.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -419,6 +473,12 @@ help:
 	@echo "... PollManager.o"
 	@echo "... PollManager.i"
 	@echo "... PollManager.s"
+	@echo "... Survey.o"
+	@echo "... Survey.i"
+	@echo "... Survey.s"
+	@echo "... UIHelper.o"
+	@echo "... UIHelper.i"
+	@echo "... UIHelper.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
