@@ -144,13 +144,3 @@ Enter option index to vote for: 1
 * Export entire app state (polls + surveys) to a file
 * Import polls/surveys from a file
 * Web UI powered by C++ backend (maybe??)
-
----
-
-## ✨ Credits
-
-Made with love and a bit of chaos by a CS student learning C++, algorithms, and how to make CLI apps fun!
-
----
-
-Enjoy voting and surveying! 🚀
